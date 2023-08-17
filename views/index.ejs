@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+<!-- <h1><img src="styles/wave-logo.svg">Todo List</h1> -->
+
+<ul class="container">
+    <form action="/submit" method="POST">
+        <input type="text" name="newTask" placeholder="New task">
+        <button type="submit">Submit</button>
+    </form>
+    <% taskList.forEach(function(task) { %>
+    <% if(task === taskList[taskList.length - 1]) { %>
+    <li class="item animate__animated animate__lightSpeedInLeft animate__faster task-item">
+        <input type="checkbox" name="check1">
+        <label for="check1"><%= task %></label>
+    </li>
+    <% } else { %>
+    <li class="item">
+        <%= task %>
+    </li>
+    <% } %>
+    <% }); %>
+</ul>
+
+<%- include("partials/footer.ejs") %>

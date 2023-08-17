@@ -1,0 +1,93 @@
+html {
+    /* background: linear-gradient(45deg, #05FAE2, #1694F5); */
+    background-image: -webkit-linear-gradient(25deg, #073ADE 30%, #09BADE 60%, #05FAE2 10%, #B6ECFA);
+    background-size: cover;
+    min-height: 100vh;
+    color: #100079;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logoHeader {
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+    /* text-decoration: line-through; */
+}
+
+p {
+    color: antiquewhite;
+    padding-left: 1em;
+    margin-top: 85vh;
+}
+
+li {
+    display: flex;
+    padding: 1em 1em 1em 0em;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 35rem;
+    margin-left: 0rem;
+    /* Add spacing between checkbox and task text */
+    height: 20px;
+}
+
+input[type=checkbox]:checked+label {
+    color: rgba(251, 76, 146, 0.8);
+    text-decoration: line-through;
+}
+
+input {
+    width: 35vw;
+    height: 27px;
+    padding: 5px;
+    background-image: -webkit-linear-gradient(25deg, #09BADE 40%, #B6ECFA 60%, #B6ECFA);
+    border-radius: 5px;
+    border: none;
+}
+
+::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    height: 37px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+    background-color: rgba(251, 76, 146, 0.8);
+    border: none;
+}
+
+@media (max-width: 1260px) {
+    button {
+        width: 37vw;
+        border-radius: 5px;
+    }
+}
+
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40vw;
+    padding-left: 1em;
+}
+
+.item {
+    width: 40vw;
+    /* border: 2px solid #073ADE; */
+    height: auto;
+    margin: 5px;
+    background-image: -webkit-linear-gradient(25deg, #073ADE 30%, rgb(5, 250, 226, 0.6) 60%);
+    color: antiquewhite;
+    border-radius: 5px;
+}
