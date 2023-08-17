@@ -17,7 +17,7 @@ const taskList = [];
 
 app.get("/", (req, res) => {
     // Render the "index.ejs" template with the taskList data
-    res.render("index.ejs", { taskList, header, delBtn, another });
+    res.render("views/index.ejs", { taskList, header, delBtn, another });
 });
 
 app.post("/submit", (req, res) => {
